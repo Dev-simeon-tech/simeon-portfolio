@@ -27,16 +27,32 @@ const Contact = () => {
       <h3 className='text-2xl pt-6'>Let’s get in touch!</h3>
 
       <div className='flex gap-6 justify-center my-10 lg:justify-start '>
-        <a href='http://' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://www.linkedin.com/in/osesimeon/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <LinkedinIcon className='h-12 w-12' />
         </a>
-        <a href='http://' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://github.com/Dev-simeon-tech'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <GithubIcon className='h-12 w-12' />
         </a>
-        <a href='http://' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://x.com/ose_simeon'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <XIcon className='h-12 w-12' />
         </a>
-        <a href='http://' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://www.instagram.com/ose_simeon/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <InstagramIcon className='h-12 w-12' />
         </a>
       </div>

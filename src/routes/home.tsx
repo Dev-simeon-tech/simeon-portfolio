@@ -11,7 +11,7 @@ import lightRay from "@/assets/Images/Light Ray.png";
 
 const Home = () => {
   return (
-    <div className='lg:px-20 px-4 relative'>
+    <div className='lg:px-20 px-4 md:px-8 relative'>
       <Header />
       <Navbar />
       <img

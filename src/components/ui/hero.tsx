@@ -39,7 +39,7 @@ const Hero = () => {
       className='pt-15 flex min-h-[80vh] flex-col gap-4 lg:pt-25'
     >
       <h2 className='text-3xl lg:text-5xl'>Hello 👋,</h2>
-      <h1 className='text-4xl lg:text-6xl font-neue-montreal-medium'>
+      <h1 className='text-4xl md:text-6xl font-neue-montreal-medium'>
         I’m Simeon, a <br className='lg:hidden' />
         <span className='text-primary-green' ref={textRef}></span>
       </h1>
