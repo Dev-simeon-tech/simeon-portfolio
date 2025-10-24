@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useSectionNav } from "../../context/sectionNav";
-import LogoLoopContainer from "../../components/ui/logoLoopContainer";
+// import LogoLoopContainer from "../../components/ui/logoLoopContainer";
 import { motion } from "motion/react";
 import Typed from "typed.js";
 
@@ -59,7 +59,7 @@ const Hero = () => {
           See Projects
         </button>
       </a>
-      <LogoLoopContainer />
+      {/* <LogoLoopContainer /> */}
     </motion.main>
   );
 };
