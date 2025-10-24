@@ -35,7 +35,10 @@ const FeaturedProjectCard = ({
         </div>
 
         <a href={link} target='_blank'>
-          <button className='bg-neutral-200 flex visit-btn gap-2 rounded-lg px-8 py-3'>
+          <button
+            aria-label={`visit ${title} site`}
+            className='bg-neutral-200 flex visit-btn gap-2 rounded-lg px-8 py-3'
+          >
             <p>View Site</p>
             <VisitIcon className='w-6 h-6 transition-transform duration-200' />
           </button>

@@ -27,7 +27,10 @@ const ProjectCard = ({
           <p className='pt-2'>{subtitle}</p>
         </div>
         <a href={link} target='_blank'>
-          <button className='p-2 visit-btn rounded-[50%] bg-neutral-200 '>
+          <button
+            aria-label={`visit ${title} site`}
+            className='p-2 visit-btn rounded-[50%] bg-neutral-200 '
+          >
             <VisitIcon className='w-11 h-11 transition-transform duration-200' />
           </button>
         </a>
