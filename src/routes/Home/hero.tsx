@@ -52,7 +52,7 @@ const Hero = () => {
         effortless to use.
       </p>
       <a href='#projects'>
-        <button className='border-2 hero-btn overflow-hidden  hover:text-neutral-100 transition-colors duration-300 mt-2 border-primary-green relative py-3 px-4 w-fit rounded-3xl'>
+        <button className='border-2 hero-btn overflow-hidden  hover:text-neutral-100 transition-colors duration-300 mt-2 border-primary-green hover:border-transparent relative py-3 px-4 w-fit rounded-3xl '>
           See Projects
         </button>
       </a>

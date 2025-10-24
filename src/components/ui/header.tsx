@@ -1,11 +1,14 @@
 import { useState } from "react";
 import DownloadIcon from "@/assets/Images/icon_download.svg?react";
+import { Link } from "react-router";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className='flex justify-between items-center pt-8 relative '>
-      <h2 className='text-xl lg:text-2xl'>Simeon Elebesunu</h2>
+      <Link to={"/"}>
+        <h2 className='text-xl lg:text-2xl'>Simeon Elebesunu</h2>
+      </Link>
       <button
         className='hamburger-cont lg:hidden flex align-center justify-center'
         aria-expanded={isOpen}
@@ -21,14 +24,16 @@ const Header = () => {
         </svg>
       </button>
 
-      <button
-        className={`items-center lg:flex justify-center gap-2 absolute lg:w-fit w-full lg:top-0 top-20 lg:relative text-neutral-100 bg-primary-green text-[1rem] px-4 py-3 rounded-[8px] ${
-          isOpen ? "flex" : "hidden"
-        } `}
-      >
-        <DownloadIcon />
-        <p>Download CV</p>
-      </button>
+      <a href="/Simeon's CV.pdf" download>
+        <button
+          className={`items-center transition-colors duration-300 hover:bg-white lg:flex justify-center gap-2 absolute lg:w-fit w-full lg:top-0 top-20 lg:relative text-neutral-100 bg-primary-green text-[1rem] px-4 py-3 rounded-[8px] ${
+            isOpen ? "flex" : "hidden"
+          } `}
+        >
+          <DownloadIcon />
+          <p>Download CV</p>
+        </button>
+      </a>
     </header>
   );
 };
