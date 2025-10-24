@@ -3,6 +3,7 @@ import { useSectionNav } from "../../context/sectionNav";
 
 import { display } from "../../lib/motionOneVariants";
 import cnLogo from "@/assets/Images/cn-192.jpg";
+import SpotlightCard from "../../lib/ReactBits/SpotlightCard";
 
 const Experience = () => {
   const { sectionRefs } = useSectionNav();
@@ -20,7 +21,8 @@ const Experience = () => {
     >
       <h2 className='section-header'>Experience</h2>
 
-      <div className='bg-neutral-100 mt-10 rounded-xl divide-y-2 divide-gray-border border-1 lg:w-[50rem] lg:mx-auto py-4 px-6 border-gray-border '>
+      {/* experience card starts */}
+      <SpotlightCard className='bg-neutral-100 mt-10 rounded-xl divide-y-2 divide-gray-border border-1 lg:w-[50rem] lg:mx-auto py-4 px-6 border-gray-border '>
         <div className='flex lg:justify-between flex-col gap-3 pb-3 lg:flex-row lg:items-center'>
           <div className='flex items-center gap-4'>
             <img className='rounded-sm' src={cnLogo} alt='connote logo' />
@@ -41,7 +43,7 @@ const Experience = () => {
           summarization tool. Designed and developed the full frontend and
           backend (firebase).
         </p>
-      </div>
+      </SpotlightCard>
     </motion.section>
   );
 };

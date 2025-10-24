@@ -1,20 +1,24 @@
 import { useSectionNav } from "../../context/sectionNav";
 import { motion } from "motion/react";
-import StackGroup from "./stackGroup";
+import StackGroup from "../../components/ui/stackGroup";
 import { display } from "../../lib/motionOneVariants";
 
-import HtmlIcon from "@/assets/Images/icon-html.svg?react";
-import CSSIcon from "@/assets/Images/icon-css.svg?react";
-import JavaScriptIcon from "@/assets/Images/icon-javascript.svg?react";
-import TailwindIcon from "@/assets/Images/icon-tailwindcss.svg?react";
-import ReactIcon from "@/assets/Images/icon-react.svg?react";
-import SassIcon from "@/assets/Images/icon-sass.svg?react";
-import ReduxIcon from "@/assets/Images/icon-redux.svg?react";
-import TypeScriptIcon from "@/assets/Images/icon-typescript.svg?react";
-import FirebaseIcon from "@/assets/Images/icon-firebase.svg?react";
-import FigmaIcon from "@/assets/Images/icon-figma.svg?react";
-import GithubIcon from "@/assets/Images/icon-github.svg?react";
-import GitIcon from "@/assets/Images/icon-git.svg?react";
+import { stackIcons } from "../../utils/stackIcons";
+
+const {
+  ReactIcon,
+  ReduxIcon,
+  TypeScriptIcon,
+  HtmlIcon,
+  CSSIcon,
+  FigmaIcon,
+  FirebaseIcon,
+  TailwindIcon,
+  JavaScriptIcon,
+  GitIcon,
+  GithubIcon,
+  SassIcon,
+} = stackIcons;
 
 const frontendStack = [
   { icon: HtmlIcon, label: "HTML" },

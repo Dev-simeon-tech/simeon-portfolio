@@ -10,3 +10,18 @@ export const display = {
     },
   },
 };
+
+export const slideUp = {
+  hidden: {
+    y: "30vh",
+  },
+  visible: {
+    y: "0vh",
+
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};

@@ -1,5 +1,6 @@
 import { useSectionNav } from "../../context/sectionNav";
-
+import { motion } from "motion/react";
+import { slideUp } from "../../lib/motionOneVariants";
 import ProfileIcon from "@/assets/Images/icon-profile.svg?react";
 import ExperienceIcon from "@/assets/Images/icon-briefcase.svg?react";
 import ProjectsIcon from "@/assets/Images/icon-rocket.svg?react";
@@ -23,7 +24,12 @@ export const sections: Section[] = [
 const Navbar = () => {
   const { activeId, navRefs, indicatorStyle } = useSectionNav();
   return (
-    <nav className='bg-nav-bg backdrop-blur-[40px] fixed left-1/2 -translate-x-1/2 top-[80%] z-20 w-[80%] lg:max-w-[50rem] p-2.5 rounded-4xl'>
+    <motion.nav
+      variants={slideUp as any}
+      initial='hidden'
+      animate='visible'
+      className='bg-nav-bg backdrop-blur-[40px] fixed left-1/2 -translate-x-1/2 top-[80%] z-20 w-[80%] lg:max-w-[50rem] p-2.5 rounded-4xl'
+    >
       <ul className='flex justify-between items-center relative'>
         {/* Sliding background */}
         <div
@@ -50,7 +56,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 

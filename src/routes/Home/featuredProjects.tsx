@@ -1,7 +1,7 @@
 import { useSectionNav } from "../../context/sectionNav";
 import { motion } from "motion/react";
-import FeaturedProjectCard from "./featuredProjectCard";
-import ProjectCard from "./projectCard";
+import FeaturedProjectCard from "../../components/ui/featuredProjectCard";
+import ProjectCard from "../../components/ui/projectCard";
 import { display } from "../../lib/motionOneVariants";
 
 import connotePreview from "@/assets/Images/connote-preview.jpg";
