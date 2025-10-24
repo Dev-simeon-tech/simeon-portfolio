@@ -26,13 +26,15 @@ const Header = () => {
       </button>
 
       <a
-        className={`${isOpen ? "flex" : "hidden"} `}
+        className={`${
+          isOpen ? "block " : "hidden"
+        } absolute w-full left-0 lg:w-fit top-20 lg:top-0 lg:block lg:relative `}
         href="/Simeon's CV.pdf"
         download
       >
         <button
           aria-label='Download CV'
-          className='items-center transition-colors duration-300 hover:bg-white lg:flex justify-center gap-2 absolute lg:w-fit w-full lg:top-0 top-20 lg:relative text-neutral-100 bg-primary-green text-[1rem] px-4 py-3 rounded-[8px]'
+          className='items-center transition-colors duration-300 hover:bg-white flex justify-center gap-2  lg:w-fit w-full    text-neutral-100 bg-primary-green text-[1rem] px-4 py-3 rounded-[8px]'
         >
           <DownloadIcon />
           <p>Download CV</p>
