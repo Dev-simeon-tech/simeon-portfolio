@@ -42,6 +42,7 @@ const Navbar = () => {
         {sections.map(({ id, label, icon }) => (
           <li key={id}>
             <a
+              aria-label={`Navigate to ${label} section`}
               ref={(el) => {
                 navRefs.current[id] = el;
               }}

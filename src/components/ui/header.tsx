@@ -10,6 +10,7 @@ const Header = () => {
         <h2 className='text-xl lg:text-2xl'>Simeon Elebesunu</h2>
       </Link>
       <button
+        aria-label='Toggle menu'
         className='hamburger-cont lg:hidden flex align-center justify-center'
         aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
@@ -26,6 +27,7 @@ const Header = () => {
 
       <a href="/Simeon's CV.pdf" download>
         <button
+          aria-label='Download CV'
           className={`items-center transition-colors duration-300 hover:bg-white lg:flex justify-center gap-2 absolute lg:w-fit w-full lg:top-0 top-20 lg:relative text-neutral-100 bg-primary-green text-[1rem] px-4 py-3 rounded-[8px] ${
             isOpen ? "flex" : "hidden"
           } `}
