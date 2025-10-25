@@ -18,14 +18,22 @@ const {
 } = stackIcons;
 
 const techLogos = [
-  { node: <ReactIcon />, title: "React", href: "https://react.dev" },
+  {
+    node: <ReactIcon />,
+    title: "React",
+    href: "https://react.dev",
+  },
 
   {
     node: <TypeScriptIcon />,
     title: "TypeScript",
     href: "https://www.typescriptlang.org",
   },
-  { node: <NextIcon />, title: "Next.js", href: "https://nextjs.org" },
+  {
+    node: <NextIcon width={"5rem"} height={"5rem"} />,
+    title: "Next.js",
+    href: "https://nextjs.org",
+  },
   {
     node: <TailwindIcon />,
     title: "Tailwind CSS",
@@ -85,12 +93,12 @@ const LogoLoopContainer = () => {
         logos={techLogos}
         speed={120}
         direction='left'
-        logoHeight={18}
+        logoHeight={15}
         gap={50}
         pauseOnHover
         scaleOnHover
         fadeOut
-        fadeOutColor='#0a0a0a'
+        fadeOutColor='#000000'
         ariaLabel='my stack'
         className='[&_ul]:overflow-y-hidden '
       />

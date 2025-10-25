@@ -37,7 +37,7 @@ const Hero = () => {
         sectionRefs.current.home = el;
       }}
       id='home'
-      className='pt-15 flex min-h-[80vh]  flex-col gap-4 lg:pt-25'
+      className='pt-15 flex min-h-[75vh] pb-[13rem] flex-col gap-4 lg:pt-25'
     >
       <h2 className='text-3xl lg:text-5xl'>Hello 👋,</h2>
       <h1 className='text-4xl md:text-6xl font-neue-montreal-medium'>
