@@ -44,7 +44,7 @@ const Stack = () => {
       variants={display}
       initial='hidden'
       whileInView='visible'
-      viewport={{ amount: 0.3 }}
+      viewport={{ amount: 0.2 }}
       id='stack'
       ref={(el) => {
         sectionRefs.current.stack = el;
