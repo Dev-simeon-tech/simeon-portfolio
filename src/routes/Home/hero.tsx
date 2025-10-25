@@ -31,7 +31,7 @@ const Hero = () => {
     <motion.main
       variants={display}
       initial='hidden'
-      viewport={{ margin: "-300px" }}
+      viewport={{ amount: 0.3 }}
       whileInView={display.visible}
       ref={(el) => {
         sectionRefs.current.home = el;

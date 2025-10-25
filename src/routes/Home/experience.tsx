@@ -12,7 +12,7 @@ const Experience = () => {
       variants={display}
       initial='hidden'
       whileInView='visible'
-      viewport={{ margin: "-300px" }}
+      viewport={{ amount: 0.3 }}
       className='min-h-[80vh] pt-20 lg:pt-25 '
       id='experience'
       ref={(el) => {

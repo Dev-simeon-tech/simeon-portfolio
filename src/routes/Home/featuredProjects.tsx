@@ -50,7 +50,7 @@ const FeaturedProjects = () => {
       variants={display}
       initial='hidden'
       whileInView='visible'
-      viewport={{ margin: "-400px" }}
+      viewport={{ amount: 0.3 }}
       id='projects'
       className='pt-10'
       ref={(el) => {

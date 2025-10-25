@@ -16,7 +16,7 @@ const Contact = () => {
       variants={display}
       initial='hidden'
       whileInView='visible'
-      viewport={{ margin: "-300px" }}
+      viewport={{ amount: 0.3 }}
       ref={(el) => {
         sectionRefs.current.contact = el;
       }}
