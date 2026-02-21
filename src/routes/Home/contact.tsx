@@ -28,7 +28,7 @@ const Contact = () => {
 
       <div className='flex gap-6 justify-center my-10 lg:justify-start '>
         <a
-          href='https://www.linkedin.com/in/osesimeon/'
+          href='https://www.linkedin.com/in/ose-simeon/'
           target='_blank'
           rel='noopener noreferrer'
         >
