@@ -8,6 +8,7 @@ import connotePreview from "@/assets/Images/connote-preview.jpg";
 import pianistPreview from "@/assets/Images/pianist-preview.jpg";
 import weatherNowPreview from "@/assets/Images/weather-now-preview.jpg";
 import countriesSearchPreview from "@/assets/Images/countries-search-preview.jpg";
+import typingSpeedTextPreview from "@/assets/Images/Typing-speed-test-preview.jpg";
 
 const cardsData = [
   {
@@ -37,9 +38,15 @@ const projectCard = [
   },
   {
     title: "Countries Search app",
-    subtitle: "FM challenge ",
+    subtitle: "FM challenge",
     imgPreveiw: countriesSearchPreview,
     link: "https://countries-search-app-xi.vercel.app/",
+  },
+  {
+    title: "Typing Speed Test app",
+    subtitle: "Hackathon",
+    imgPreveiw: typingSpeedTextPreview,
+    link: "https://typing-speed-test-ose.vercel.app/",
   },
 ];
 
@@ -74,7 +81,7 @@ const FeaturedProjects = () => {
         <h3 className='text-2xl lg:text-4xl text-center mt-15'>
           Some nice project I’ve worked on
         </h3>
-        <div className='flex flex-col md:flex-row lg:justify-center lg:gap-14 gap-8 mt-10'>
+        <div className='flex flex-col md:flex-row flex-wrap md:justify-center lg:gap-14 gap-8 mt-10'>
           {projectCard.map(({ title, subtitle, imgPreveiw, link }) => (
             <ProjectCard
               title={title}

@@ -13,7 +13,7 @@ const ProjectCard = ({
   link,
 }: ProjectCardProps) => {
   return (
-    <div className='bg-neutral-100 flex flex-col px-4 py-5 rounded-3xl gap-8'>
+    <div className='bg-neutral-100 flex flex-col md:w-130 px-4 py-5 rounded-3xl gap-8'>
       <div className='rounded-xl overflow-hidden'>
         <img
           className='w-full hover:scale-110 transition-transform duration-200'

@@ -59,7 +59,7 @@ const Contact = () => {
       <div className='flex flex-col gap-4 lg:flex-row'>
         <div className='flex flex-col gap-2 lg:flex-row'>
           <EmailIcon />
-          <p>elebesunuosereme@gmail.com</p>
+          <p>elebesunusimeon@gmail.com</p>
         </div>
         <div className='flex flex-col gap-2 lg:flex-row'>
           <PhoneIcon />
